@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraPress Co. — Premium Sublimation Printing | Luxury Custom Apparel</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Experience world-class sublimation printing with AuraPress Co. Museum-grade quality, photorealistic prints, and unlimited color possibilities.">
+    <meta name="keywords" content="sublimation printing, custom apparel, luxury printing, t-shirt printing">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-bg': '#FFFFFF',
+                        'light-secondary': '#F8FAFC',
+                        'light-accent': '#F1F5F9',
+                        'dark-text': '#0F172A',
+                        'gray-text': '#475569',
+                        'aurora-cyan': '#00F2FE',
+                        'aurora-blue': '#4FACFE',
+                        'aurora-purple': '#A78BFA',
+                    },
+                    fontFamily: {
+                        'heading': ['Syne', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-light-bg text-dark-text font-body">
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full top-0 z-50 glass-effect shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="relative w-12 h-12">
+                        <div
+                            class="absolute inset-0 gradient-aurora rounded-xl transform group-hover:rotate-180 transition-transform duration-700">
+                        </div>
+                        <div class="absolute inset-1 bg-light-bg rounded-lg flex items-center justify-center">
+                            <span class="text-2xl font-heading font-bold gradient-text">A</span>
+                        </div>
+                    </div>
+                    <span class="font-heading font-bold text-2xl tracking-tight">
+                        <span class="logo-letter">A</span><span class="logo-letter">u</span><span
+                            class="logo-letter">r</span><span class="logo-letter">a</span><span
+                            class="logo-letter">P</span><span class="logo-letter">r</span><span
+                            class="logo-letter">e</span><span class="logo-letter">s</span><span
+                            class="logo-letter">s</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-dark-text hover:text-aurora-cyan font-medium">Home</a>
+                    <a href="#services" class="nav-link text-dark-text hover:text-aurora-cyan font-medium">Services</a>
+                    <a href="#products" class="nav-link text-dark-text hover:text-aurora-cyan font-medium">Products</a>
+                    <a href="#technology"
+                        class="nav-link text-dark-text hover:text-aurora-cyan font-medium">Technology</a>
+                    <a href="#gallery" class="nav-link text-dark-text hover:text-aurora-cyan font-medium">Gallery</a>
+                    <a href="#testimonials"
+                        class="nav-link text-dark-text hover:text-aurora-cyan font-medium">Testimonials</a>
+                    <a href="#contact"
+                        class="btn-primary gradient-aurora text-white px-6 py-3 rounded-lg font-semibold shadow-lg">Get
+                        Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-dark-text focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu lg:hidden fixed top-0 left-0 w-full h-screen bg-light-bg z-40 p-8">
+            <button id="closeMobileMenu" class="absolute top-8 right-8 text-3xl text-dark-text">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex flex-col space-y-6 mt-20">
+                <a href="#home"
+                    class="mobile-link text-2xl font-semibold text-dark-text hover:text-aurora-cyan">Home</a>
+                <a href="#services"
+                    class="mobile-link text-2xl font-semibold text-dark-text hover:text-aurora-cyan">Services</a>
+                <a href="#products"
+                    class="mobile-link text-2xl font-semibold text-dark-text hover:text-aurora-cyan">Products</a>
+                <a href="#technology"
+                    class="mobile-link text-2xl font-semibold text-dark-text hover:text-aurora-cyan">Technology</a>
+                <a href="#gallery"
+                    class="mobile-link text-2xl font-semibold text-dark-text hover:text-aurora-cyan">Gallery</a>
+                <a href="#testimonials"
+                    class="mobile-link text-2xl font-semibold text-dark-text hover:text-aurora-cyan">Testimonials</a>
+                <a href="#contact"
+                    class="gradient-aurora text-white px-6 py-3 rounded-lg font-semibold text-center text-xl">Get
+                    Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home"
+        class="hero-section relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-br from-light-bg via-light-secondary to-light-accent">
+        <!-- Decorative Elements -->
+        <div class="hero-blur hero-blur-1 absolute top-20 right-10 w-72 h-72 bg-aurora-cyan/10 rounded-full blur-3xl">
+        </div>
+        <div class="hero-blur hero-blur-2 absolute bottom-20 left-10 w-96 h-96 bg-aurora-blue/10 rounded-full blur-3xl">
+        </div>
+        <div
+            class="hero-blur hero-blur-3 absolute top-1/2 left-1/2 w-64 h-64 bg-aurora-purple/10 rounded-full blur-3xl">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="space-y-8" data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                        class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-gradient-to-r from-aurora-cyan/10 to-aurora-blue/10 border border-aurora-cyan/20">
+                        <div class="w-2 h-2 rounded-full gradient-aurora animate-pulse"></div>
+                        <span class="text-sm font-semibold tracking-wide gradient-text">Premium Sublimation
+                            Excellence</span>
+                    </div>
+
+                    <h1 class="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl leading-tight">
+                        Transform Your Vision Into
+                        <span class="gradient-text block mt-2">Wearable Art</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-gray-text leading-relaxed max-w-xl">
+                        Experience museum-grade sublimation printing with unlimited colors, photorealistic detail, and
+                        permanent quality. AuraPress Co. brings your designs to life with precision you can feel.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#contact"
+                            class="btn-primary gradient-aurora text-white px-8 py-4 rounded-xl font-semibold text-lg text-center shadow-xl">
+                            <i class="fas fa-rocket mr-2"></i> Start Your Project
+                        </a>
+                        <a href="#gallery"
+                            class="border-2 border-aurora-cyan text-aurora-cyan px-8 py-4 rounded-xl font-semibold text-lg text-center hover:bg-aurora-cyan hover:text-white transition-all duration-300">
+                            <i class="fas fa-images mr-2"></i> View Portfolio
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 pt-8">
+                        <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="text-4xl font-heading font-bold gradient-text">10K+</div>
+                            <div class="text-sm text-gray-text mt-1">Projects Completed</div>
+                        </div>
+                        <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="text-4xl font-heading font-bold gradient-text">300</div>
+                            <div class="text-sm text-gray-text mt-1">DPI Quality</div>
+                        </div>
+                        <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="text-4xl font-heading font-bold gradient-text">24/7</div>
+                            <div class="text-sm text-gray-text mt-1">Support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive T-Shirt -->
+                <div class="tshirt-container relative" data-aos="fade-left" data-aos-duration="1000">
+                    <div id="tshirt" class="tshirt folded">
+                        <svg viewBox="0 0 500 600" class="w-full h-auto drop-shadow-2xl">
+                            <defs>
+                                <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00F2FE;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#4FACFE;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+                                </linearGradient>
+                                <filter id="shadow">
+                                    <feDropShadow dx="0" dy="10" stdDeviation="15" flood-opacity="0.3" />
+                                </filter>
+                            </defs>
+                            <path
+                                d="M 150 100 L 120 140 L 120 550 L 380 550 L 380 140 L 350 100 L 330 120 L 300 100 L 250 100 L 250 130 L 250 100 L 200 100 L 170 120 Z"
+                                fill="url(#shirtGradient)" filter="url(#shadow)" class="animate-float" />
+                            <ellipse cx="250" cy="105" rx="30" ry="15" fill="#E0F2FE" />
+                            <path d="M 150 100 L 120 140 L 80 160 L 100 180 L 120 170" fill="url(#shirtGradient)"
+                                opacity="0.8" />
+                            <path d="M 350 100 L 380 140 L 420 160 L 400 180 L 380 170" fill="url(#shirtGradient)"
+                                opacity="0.8" />
+                            <circle cx="250" cy="300" r="80" fill="white" opacity="0.2" />
+                            <text x="250" y="310" font-family="Arial, sans-serif" font-size="40" font-weight="bold"
+                                fill="white" text-anchor="middle">AP</text>
+                            <line x1="150" y1="250" x2="350" y2="250" stroke="white" stroke-width="1" opacity="0.3" />
+                            <line x1="150" y1="400" x2="350" y2="400" stroke="white" stroke-width="1" opacity="0.3" />
+                        </svg>
+                    </div>
+
+                    <!-- Floating Icons -->
+                    <div class="floating-icon floating-icon-1 absolute top-10 -left-10">
+                        <div class="bg-white rounded-full p-4 shadow-xl">
+                            <i class="fas fa-palette text-3xl text-aurora-cyan"></i>
+                        </div>
+                    </div>
+                    <div class="floating-icon floating-icon-2 absolute bottom-20 -right-10">
+                        <div class="bg-white rounded-full p-4 shadow-xl">
+                            <i class="fas fa-droplet text-3xl text-aurora-blue"></i>
+                        </div>
+                    </div>
+                    <div class="floating-icon floating-icon-3 absolute top-1/2 -right-10">
+                        <div class="bg-white rounded-full p-4 shadow-xl">
+                            <i class="fas fa-star text-3xl text-aurora-purple"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator absolute bottom-10 left-1/2 transform -translate-x-1/2">
+            <i class="fas fa-chevron-down text-3xl text-aurora-cyan"></i>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-light-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+                    Our <span class="gradient-text">Premium Services</span>
+                </h2>
+                <p class="text-xl text-gray-text max-w-2xl mx-auto">
+                    End-to-end sublimation solutions tailored to your brand's unique needs
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 gradient-aurora rounded-xl flex items-center justify-center mb-6 feature-icon">
+                        <i class="fas fa-shirt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-4">Custom Apparel</h3>
+                    <p class="text-gray-text mb-6">Premium t-shirts, hoodies, jerseys, and activewear with
+                        photorealistic prints that last forever.</p>
+                    <ul class="space-y-2 text-sm text-gray-text">
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> All fabric types</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> No color limits</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Same-day production</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 gradient-aurora rounded-xl flex items-center justify-center mb-6 feature-icon">
+                        <i class="fas fa-mug-hot text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-4">Promotional Products</h3>
+                    <p class="text-gray-text mb-6">Mugs, keychains, phone cases, and more with vibrant, permanent
+                        full-color designs.</p>
+                    <ul class="space-y-2 text-sm text-gray-text">
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> 100+ product options</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Bulk discounts</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Fast turnaround</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-16 h-16 gradient-aurora rounded-xl flex items-center justify-center mb-6 feature-icon">
+                        <i class="fas fa-image text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-4">Fine Art Prints</h3>
+                    <p class="text-gray-text mb-6">Museum-quality reproductions on metal, fabric, and specialty
+                        substrates.</p>
+                    <ul class="space-y-2 text-sm text-gray-text">
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Gallery-grade quality</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> UV resistant</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Custom sizes</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 gradient-aurora rounded-xl flex items-center justify-center mb-6 feature-icon">
+                        <i class="fas fa-building text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-4">Corporate Branding</h3>
+                    <p class="text-gray-text mb-6">Complete brand merchandise solutions for businesses of all sizes.</p>
+                    <ul class="space-y-2 text-sm text-gray-text">
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Volume pricing</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Brand consistency</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 gradient-aurora rounded-xl flex items-center justify-center mb-6 feature-icon">
+                        <i class="fas fa-trophy text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-4">Sports & Teams</h3>
+                    <p class="text-gray-text mb-6">Custom jerseys, uniforms, and team gear with vibrant, durable prints.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-text">
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Performance fabrics</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Number & name printing</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Team discounts</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-16 h-16 gradient-aurora rounded-xl flex items-center justify-center mb-6 feature-icon">
+                        <i class="fas fa-pencil-ruler text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold mb-4">Design Services</h3>
+                    <p class="text-gray-text mb-6">Professional graphic design and artwork preparation by our expert
+                        team.</p>
+                    <ul class="space-y-2 text-sm text-gray-text">
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Free consultations</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Unlimited revisions</li>
+                        <li><i class="fas fa-check text-aurora-cyan mr-2"></i> Vector conversion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY SECTION -->
+    <section id="technology" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+                    Why <span class="gradient-text">Sublimation</span> Wins
+                </h2>
+                <p class="text-xl text-gray-text max-w-2xl mx-auto">
+                    See how our advanced sublimation technology outperforms traditional printing methods
+                </p>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto" data-aos="zoom-in">
+                <table class="w-full bg-light-secondary rounded-2xl overflow-hidden shadow-xl">
+                    <thead class="gradient-aurora text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-lg font-heading">Feature</th>
+                            <th class="px-6 py-4 text-left text-lg font-heading">Sublimation (AuraPress)</th>
+                            <th class="px-6 py-4 text-left text-lg font-heading">Screen Printing</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-dark-text">
+                        <tr class="border-b border-gray-200">
+                            <td class="px-6 py-4 font-semibold">Color Range</td>
+                            <td class="px-6 py-4">
+                                <span class="text-green-600"><i class="fas fa-check-circle mr-2"></i>Unlimited colors &
+                                    gradients</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="text-red-600"><i class="fas fa-times-circle mr-2"></i>Limited (4-6
+                                    colors)</span>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-white">
+                            <td class="px-6 py-4 font-semibold">Detail Quality</td>
+                            <td class="px-6 py-4">
+                                <span class="text-green-600"><i class="fas fa-check-circle mr-2"></i>300+ DPI
+                                    photorealistic</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="text-red-600"><i class="fas fa-times-circle mr-2"></i>45-65 DPI
+                                    halftone</span>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="px-6 py-4 font-semibold">Durability</td>
+                            <td class="px-6 py-4">
+                                <span class="text-green-600"><i class="fas fa-check-circle mr-2"></i>Permanent, won't
+                                    crack</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="text-red-600"><i class="fas fa-times-circle mr-2"></i>Fades & cracks over
+                                    time</span>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-white">
+                            <td class="px-6 py-4 font-semibold">Feel</td>
+                            <td class="px-6 py-4">
+                                <span class="text-green-600"><i class="fas fa-check-circle mr-2"></i>Zero texture,
+                                    breathable</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="text-red-600"><i class="fas fa-times-circle mr-2"></i>Thick plastisol
+                                    layer</span>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="px-6 py-4 font-semibold">Setup Time</td>
+                            <td class="px-6 py-4">
+                                <span class="text-green-600"><i class="fas fa-check-circle mr-2"></i>Instant
+                                    production</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="text-red-600"><i class="fas fa-times-circle mr-2"></i>Days for screen
+                                    prep</span>
+                            </td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="px-6 py-4 font-semibold">Minimum Order</td>
+                            <td class="px-6 py-4">
+                                <span class="text-green-600"><i class="fas fa-check-circle mr-2"></i>Just 1
+                                    piece!</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="text-red-600"><i class="fas fa-times-circle mr-2"></i>100+ for
+                                    economy</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Video Showcase -->
+            <div class="mt-16 grid md:grid-cols-2 gap-8">
+                <div data-aos="fade-right">
+                    <h3 class="text-3xl font-heading font-bold mb-4">See The <span class="gradient-text">Process</span>
+                    </h3>
+                    <p class="text-gray-text mb-6">Watch how sublimation creates permanent, vibrant prints that become
+                        part of the fabric itself.</p>
+                    <div class="video-container rounded-2xl overflow-hidden shadow-xl">
+                        <iframe src="https://www.youtube.com/embed/onG4jdd2-94" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-3xl font-heading font-bold mb-4">Quality <span
+                            class="gradient-text">Guarantee</span></h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4 bg-light-secondary p-6 rounded-xl">
+                            <div
+                                class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-shield-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Lifetime Durability</h4>
+                                <p class="text-gray-text text-sm">Our sublimation prints are guaranteed not to peel,
+                                    crack, or fade for the lifetime of the garment.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-light-secondary p-6 rounded-xl">
+                            <div
+                                class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-leaf text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Eco-Friendly</h4>
+                                <p class="text-gray-text text-sm">Water-based inks, zero wastewater, minimal energy. No
+                                    PVC or harmful chemicals.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-light-secondary p-6 rounded-xl">
+                            <div
+                                class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-star text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Color Accuracy</h4>
+                                <p class="text-gray-text text-sm">Color-managed workflow ensures Delta-E accuracy
+                                    between proof and final product.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section id="products" class="py-20 bg-light-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+                    Our <span class="gradient-text">Product Range</span>
+                </h2>
+                <p class="text-xl text-gray-text max-w-2xl mx-auto">
+                    From apparel to promotional items, we sublimate on everything
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg group" data-aos="flip-left"
+                    data-aos-delay="100">
+                    <div class="relative h-64 bg-gradient-to-br from-aurora-cyan/20 to-aurora-blue/20 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-tshirt text-8xl text-aurora-cyan/50"></i>
+                        </div>
+                        <div class="overlay">
+                            <a href="#contact"
+                                class="bg-white text-aurora-cyan px-6 py-3 rounded-lg font-semibold">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-bold mb-2">Premium T-Shirts</h3>
+                        <p class="text-gray-text mb-4">100% polyester performance tees with all-over or spot sublimation
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-text">From $12.99</span>
+                            <span
+                                class="text-xs bg-aurora-cyan/10 text-aurora-cyan px-3 py-1 rounded-full font-semibold">Most
+                                Popular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg group" data-aos="flip-left"
+                    data-aos-delay="200">
+                    <div
+                        class="relative h-64 bg-gradient-to-br from-aurora-blue/20 to-aurora-purple/20 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-shopping-bag text-8xl text-aurora-blue/50"></i>
+                        </div>
+                        <div class="overlay">
+                            <a href="#contact"
+                                class="bg-white text-aurora-blue px-6 py-3 rounded-lg font-semibold">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-bold mb-2">Tote Bags</h3>
+                        <p class="text-gray-text mb-4">Eco-friendly polyester totes with full-color edge-to-edge prints
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-text">From $8.99</span>
+                            <span
+                                class="text-xs bg-green-100 text-green-600 px-3 py-1 rounded-full font-semibold">Eco-Friendly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg group" data-aos="flip-left"
+                    data-aos-delay="300">
+                    <div
+                        class="relative h-64 bg-gradient-to-br from-aurora-purple/20 to-aurora-cyan/20 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-mug-hot text-8xl text-aurora-purple/50"></i>
+                        </div>
+                        <div class="overlay">
+                            <a href="#contact"
+                                class="bg-white text-aurora-purple px-6 py-3 rounded-lg font-semibold">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-bold mb-2">Ceramic Mugs</h3>
+                        <p class="text-gray-text mb-4">11oz & 15oz dishwasher-safe mugs with vibrant 360° prints</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-text">From $6.99</span>
+                            <span
+                                class="text-xs bg-orange-100 text-orange-600 px-3 py-1 rounded-full font-semibold">Best
+                                Value</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg group" data-aos="flip-left"
+                    data-aos-delay="100">
+                    <div
+                        class="relative h-64 bg-gradient-to-br from-aurora-cyan/20 to-aurora-purple/20 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-8xl text-aurora-cyan/50"></i>
+                        </div>
+                        <div class="overlay">
+                            <a href="#contact"
+                                class="bg-white text-aurora-cyan px-6 py-3 rounded-lg font-semibold">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-bold mb-2">Phone Cases</h3>
+                        <p class="text-gray-text mb-4">Custom cases for all major phone models with scratch-resistant
+                            finish</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-text">From $14.99</span>
+                            <span
+                                class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full font-semibold">Trending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg group" data-aos="flip-left"
+                    data-aos-delay="200">
+                    <div class="relative h-64 bg-gradient-to-br from-aurora-blue/20 to-aurora-cyan/20 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-hat-cowboy text-8xl text-aurora-blue/50"></i>
+                        </div>
+                        <div class="overlay">
+                            <a href="#contact"
+                                class="bg-white text-aurora-blue px-6 py-3 rounded-lg font-semibold">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-bold mb-2">Custom Hats</h3>
+                        <p class="text-gray-text mb-4">Trucker hats, snapbacks, and beanies with all-over sublimation
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-text">From $15.99</span>
+                            <span
+                                class="text-xs bg-blue-100 text-blue-600 px-3 py-1 rounded-full font-semibold">New</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg group" data-aos="flip-left"
+                    data-aos-delay="300">
+                    <div
+                        class="relative h-64 bg-gradient-to-br from-aurora-purple/20 to-aurora-blue/20 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-frame text-8xl text-aurora-purple/50"></i>
+                        </div>
+                        <div class="overlay">
+                            <a href="#contact"
+                                class="bg-white text-aurora-purple px-6 py-3 rounded-lg font-semibold">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-heading font-bold mb-2">Metal Prints</h3>
+                        <p class="text-gray-text mb-4">Museum-quality aluminum prints with stunning depth and clarity
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-text">From $49.99</span>
+                            <span
+                                class="text-xs bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full font-semibold">Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW SECTION -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+                    How It <span class="gradient-text">Works</span>
+                </h2>
+                <p class="text-xl text-gray-text max-w-2xl mx-auto">
+                    From concept to creation in three simple steps
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 timeline-line transform -translate-y-1/2"
+                    data-aos="zoom-in"></div>
+
+                <div class="grid lg:grid-cols-3 gap-12 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="inline-flex items-center justify-center w-24 h-24 gradient-aurora rounded-full text-white text-4xl font-bold mb-6 shadow-2xl">
+                            1</div>
+                        <h3 class="text-2xl font-heading font-bold mb-4">Submit & Consult</h3>
+                        <p class="text-gray-text mb-6">Upload your artwork through our secure portal. Our design experts
+                            review your files and recommend the best products and options for your project.</p>
+                        <div class="bg-light-secondary p-6 rounded-xl">
+                            <h4 class="font-bold mb-3">We Accept:</h4>
+                            <div class="flex flex-wrap justify-center gap-2">
+                                <span class="text-xs bg-white px-3 py-1 rounded-full">.AI</span>
+                                <span class="text-xs bg-white px-3 py-1 rounded-full">.PSD</span>
+                                <span class="text-xs bg-white px-3 py-1 rounded-full">.PDF</span>
+                                <span class="text-xs bg-white px-3 py-1 rounded-full">.EPS</span>
+                                <span class="text-xs bg-white px-3 py-1 rounded-full">.PNG</span>
+                                <span class="text-xs bg-white px-3 py-1 rounded-full">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="inline-flex items-center justify-center w-24 h-24 gradient-aurora rounded-full text-white text-4xl font-bold mb-6 shadow-2xl">
+                            2</div>
+                        <h3 class="text-2xl font-heading font-bold mb-4">Preview & Approve</h3>
+                        <p class="text-gray-text mb-6">Receive a high-resolution digital mockup within 24 hours. Our
+                            color-managed proofing ensures what you see matches the final output perfectly.</p>
+                        <div class="bg-light-secondary p-6 rounded-xl">
+                            <h4 class="font-bold mb-3">Quality Checks:</h4>
+                            <ul class="text-sm text-gray-text space-y-2">
+                                <li><i class="fas fa-check text-aurora-cyan mr-2"></i>Color accuracy</li>
+                                <li><i class="fas fa-check text-aurora-cyan mr-2"></i>Resolution verification</li>
+                                <li><i class="fas fa-check text-aurora-cyan mr-2"></i>Placement confirmation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="inline-flex items-center justify-center w-24 h-24 gradient-aurora rounded-full text-white text-4xl font-bold mb-6 shadow-2xl">
+                            3</div>
+                        <h3 class="text-2xl font-heading font-bold mb-4">Production & Delivery</h3>
+                        <p class="text-gray-text mb-6">Your order enters our climate-controlled production facility.
+                            Each piece undergoes QC inspection before premium packaging and fast shipping.</p>
+                        <div class="bg-light-secondary p-6 rounded-xl">
+                            <h4 class="font-bold mb-3">Turnaround:</h4>
+                            <ul class="text-sm text-gray-text space-y-2">
+                                <li><i class="fas fa-shipping-fast text-aurora-cyan mr-2"></i>Standard: 5-7 business
+                                    days</li>
+                                <li><i class="fas fa-bolt text-aurora-cyan mr-2"></i>Rush: 2-3 business days</li>
+                                <li><i class="fas fa-rocket text-aurora-cyan mr-2"></i>Same-day available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File Requirements -->
+            <div class="mt-20 bg-gradient-to-br from-light-secondary to-light-accent p-8 lg:p-12 rounded-3xl"
+                data-aos="zoom-in">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-3xl font-heading font-bold mb-4">
+                            <i class="fas fa-file-alt text-aurora-cyan mr-3"></i>
+                            Artwork <span class="gradient-text">Specifications</span>
+                        </h3>
+                        <p class="text-gray-text mb-6">To ensure your designs achieve maximum vibrancy and detail,
+                            please provide files meeting these professional specifications:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-aurora-cyan mr-3 mt-1"></i>
+                                <span><strong>Resolution:</strong> 300 DPI minimum at actual print size</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-aurora-cyan mr-3 mt-1"></i>
+                                <span><strong>Color Mode:</strong> CMYK preferred (RGB accepted)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-aurora-cyan mr-3 mt-1"></i>
+                                <span><strong>Formats:</strong> .AI, .EPS, .PDF (vector) or .PSD, .TIFF (raster)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-aurora-cyan mr-3 mt-1"></i>
+                                <span><strong>Bleed:</strong> Add 0.125" bleed for edge-to-edge designs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-aurora-cyan mr-3 mt-1"></i>
+                                <span><strong>Fonts:</strong> Convert to outlines/curves or include font files</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-xl">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-question-circle text-6xl text-aurora-blue mb-4"></i>
+                            <h4 class="text-2xl font-bold">Need Help?</h4>
+                        </div>
+                        <p class="text-gray-text text-center mb-6">Our pre-flight team offers complimentary artwork
+                            optimization for orders over $500.</p>
+                        <a href="#contact"
+                            class="block w-full btn-primary gradient-aurora text-white px-6 py-3 rounded-lg font-semibold text-center">
+                            Get Free File Review
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-20 bg-light-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+                    Our <span class="gradient-text">Portfolio</span>
+                </h2>
+                <p class="text-xl text-gray-text max-w-2xl mx-auto">
+                    Real projects, real results. See what we've created for brands worldwide.
+                </p>
+            </div>
+
+            <div class="image-gallery">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=400&fit=crop"
+                        alt="Custom T-Shirt Design" class="w-full h-64 object-cover">
+                    <div class="overlay">
+                        <div class="text-white text-center">
+                            <h4 class="text-2xl font-bold mb-2">All-Over Print Tee</h4>
+                            <p class="text-sm">Fashion Brand Collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=400&fit=crop"
+                        alt="Custom Mug" class="w-full h-64 object-cover">
+                    <div class="overlay">
+                        <div class="text-white text-center">
+                            <h4 class="text-2xl font-bold mb-2">Photo Mugs</h4>
+                            <p class="text-sm">Corporate Gift Set</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=400&fit=crop"
+                        alt="Team Jersey" class="w-full h-64 object-cover">
+                    <div class="overlay">
+                        <div class="text-white text-center">
+                            <h4 class="text-2xl font-bold mb-2">Sports Jerseys</h4>
+                            <p class="text-sm">Professional Team Uniforms</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&h=400&fit=crop"
+                        alt="Hoodie Design" class="w-full h-64 object-cover">
+                    <div class="overlay">
+                        <div class="text-white text-center">
+                            <h4 class="text-2xl font-bold mb-2">Premium Hoodies</h4>
+                            <p class="text-sm">Streetwear Line</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?w=600&h=400&fit=crop"
+                        alt="Phone Cases" class="w-full h-64 object-cover">
+                    <div class="overlay">
+                        <div class="text-white text-center">
+                            <h4 class="text-2xl font-bold mb-2">Custom Cases</h4>
+                            <p class="text-sm">Limited Edition Series</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=600&h=400&fit=crop"
+                        alt="Tote Bags" class="w-full h-64 object-cover">
+                    <div class="overlay">
+                        <div class="text-white text-center">
+                            <h4 class="text-2xl font-bold mb-2">Eco Tote Bags</h4>
+                            <p class="text-sm">Retail Packaging</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#contact"
+                    class="inline-block btn-primary gradient-aurora text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl">
+                    <i class="fas fa-images mr-2"></i> View Full Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+                    What Our <span class="gradient-text">Clients Say</span>
+                </h2>
+                <p class="text-xl text-gray-text max-w-2xl mx-auto">
+                    Don't just take our word for it. Here's what our satisfied customers have to say.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light-secondary p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-16 h-16 gradient-aurora rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                            SK</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Sarah Kim</h4>
+                            <p class="text-sm text-gray-text">Fashion Designer</p>
+                        </div>
+                    </div>
+                    <div class="text-aurora-cyan mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-text italic">"AuraPress transformed my sketches into stunning wearable art. The
+                        color accuracy and detail are absolutely incredible. Best sublimation service I've ever used!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-light-secondary p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-16 h-16 gradient-aurora rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                            MT</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Michael Torres</h4>
+                            <p class="text-sm text-gray-text">Sports Team Manager</p>
+                        </div>
+                    </div>
+                    <div class="text-aurora-cyan mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-text italic">"We ordered 50 custom jerseys and every single one was perfect. The
+                        prints have held up through an entire season of games and washes. Highly recommend!"</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-light-secondary p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-16 h-16 gradient-aurora rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                            EP</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Emily Parker</h4>
+                            <p class="text-sm text-gray-text">Small Business Owner</p>
+                        </div>
+                    </div>
+                    <div class="text-aurora-cyan mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-text italic">"Fast turnaround, excellent customer service, and premium quality
+                        products. AuraPress helped me launch my merch line with confidence. They're my go-to printer
+                        now!"</p>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-5xl font-heading font-bold gradient-text mb-2">10,000+</div>
+                    <p class="text-gray-text">Happy Customers</p>
+                </div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-5xl font-heading font-bold gradient-text mb-2">50,000+</div>
+                    <p class="text-gray-text">Products Printed</p>
+                </div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-5xl font-heading font-bold gradient-text mb-2">99.8%</div>
+                    <p class="text-gray-text">Satisfaction Rate</p>
+                </div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-5xl font-heading font-bold gradient-text mb-2">24hrs</div>
+                    <p class="text-gray-text">Average Response</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-light-secondary to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl sm:text-5xl font-heading font-bold mb-4">
+                    Let's Create <span class="gradient-text">Together</span>
+                </h2>
+                <p class="text-xl text-gray-text max-w-2xl mx-auto">
+                    Ready to bring your vision to life? Fill out the form below and our team will get back to you within
+                    24 hours.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Contact Form -->
+                <div class="bg-white p-8 lg:p-12 rounded-3xl shadow-2xl" data-aos="fade-right">
+                    <form id="contactForm" class="space-y-6">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-dark-text mb-2">
+                                <i class="fas fa-user text-aurora-cyan mr-2"></i>Full Name *
+                            </label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-aurora-cyan transition-all duration-300"
+                                placeholder="John Doe">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-dark-text mb-2">
+                                <i class="fas fa-envelope text-aurora-cyan mr-2"></i>Email Address *
+                            </label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-aurora-cyan transition-all duration-300"
+                                placeholder="john@example.com">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-dark-text mb-2">
+                                <i class="fas fa-phone text-aurora-cyan mr-2"></i>Phone Number
+                            </label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-aurora-cyan transition-all duration-300"
+                                placeholder="+1 (555) 000-0000">
+                        </div>
+
+                        <!-- Service Type -->
+                        <div>
+                            <label for="service" class="block text-sm font-semibold text-dark-text mb-2">
+                                <i class="fas fa-list text-aurora-cyan mr-2"></i>Service Interested In *
+                            </label>
+                            <select id="service" name="service" required
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-aurora-cyan transition-all duration-300">
+                                <option value="">Select a service...</option>
+                                <option value="custom-apparel">Custom Apparel</option>
+                                <option value="promotional">Promotional Products</option>
+                                <option value="fine-art">Fine Art Prints</option>
+                                <option value="corporate">Corporate Branding</option>
+                                <option value="sports">Sports & Teams</option>
+                                <option value="design">Design Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Quantity -->
+                        <div>
+                            <label for="quantity" class="block text-sm font-semibold text-dark-text mb-2">
+                                <i class="fas fa-box text-aurora-cyan mr-2"></i>Estimated Quantity
+                            </label>
+                            <input type="number" id="quantity" name="quantity" min="1"
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-aurora-cyan transition-all duration-300"
+                                placeholder="100">
+                        </div>
+
+                        <!-- File Upload -->
+                        <div>
+                            <label for="file" class="block text-sm font-semibold text-dark-text mb-2">
+                                <i class="fas fa-file-upload text-aurora-cyan mr-2"></i>Upload Artwork (Optional)
+                            </label>
+                            <div
+                                class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-aurora-cyan transition-all duration-300">
+                                <input type="file" id="file" name="file" accept=".ai,.eps,.pdf,.psd,.png,.jpg,.jpeg"
+                                    class="hidden" onchange="updateFileName(this)">
+                                <label for="file" class="cursor-pointer">
+                                    <i class="fas fa-cloud-upload-alt text-4xl text-aurora-cyan mb-2"></i>
+                                    <p class="text-sm text-gray-text">
+                                        <span class="font-semibold text-aurora-cyan">Click to upload</span> or drag and
+                                        drop
+                                    </p>
+                                    <p class="text-xs text-gray-text mt-1" id="fileName">AI, EPS, PDF, PSD, PNG, JPG
+                                        (Max 10MB)</p>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-dark-text mb-2">
+                                <i class="fas fa-comment text-aurora-cyan mr-2"></i>Project Details *
+                            </label>
+                            <textarea id="message" name="message" required rows="5"
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-aurora-cyan transition-all duration-300"
+                                placeholder="Tell us about your project, timeline, and any specific requirements..."></textarea>
+                        </div>
+
+                        <!-- Newsletter Checkbox -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="newsletter" name="newsletter"
+                                class="w-5 h-5 text-aurora-cyan border-gray-300 rounded focus:ring-aurora-cyan">
+                            <label for="newsletter" class="ml-3 text-sm text-gray-text">
+                                Send me exclusive offers and design tips
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full btn-primary gradient-aurora text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl">
+                            <i class="fas fa-paper-plane mr-2"></i> Send Message
+                        </button>
+
+                        <p class="text-xs text-gray-text text-center">
+                            We typically respond within 24 hours during business days
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="space-y-8" data-aos="fade-left">
+                    <!-- Contact Cards -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-heading font-bold mb-6">Get In Touch</h3>
+                        <div class="space-y-6">
+                            <!-- Phone -->
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p class="text-gray-text">+92 309 8662435</p>
+                                    <p class="text-sm text-gray-text">Mon-Fri 9am-6pm EST</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-text">aurapress719@gmail.com</p>
+                                    <p class="text-sm text-gray-text">24/7 support response</p>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Studio Location</h4>
+                                    <p class="text-gray-text">272/16 model town A block,Gujranwala</p>
+                                    <p class="text-gray-text">Gujranwala,Pakistan</p>
+                                </div>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Business Hours</h4>
+                                    <p class="text-gray-text">Monday - Friday: 9am - 6pm</p>
+                                    <p class="text-gray-text">Saturday: 10am - 4pm</p>
+                                    <p class="text-gray-text">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-heading font-bold mb-6">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 gradient-aurora rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="rounded-2xl overflow-hidden shadow-xl h-64">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6754.284470636489!2d74.17514800000002!3d32.173438999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1779781795527!5m2!1sen!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-text text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 gradient-aurora rounded-lg flex items-center justify-center">
+                            <span class="text-lg font-heading font-bold text-white">A</span>
+                        </div>
+                        <span class="font-heading font-bold text-xl">AuraPress Co.</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Premium sublimation printing services for brands that demand excellence.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-aurora-cyan transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-aurora-cyan transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-aurora-cyan transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-aurora-cyan transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-gray-400 hover:text-aurora-cyan transition-colors">Home</a></li>
+                        <li><a href="#services"
+                                class="text-gray-400 hover:text-aurora-cyan transition-colors">Services</a></li>
+                        <li><a href="#products"
+                                class="text-gray-400 hover:text-aurora-cyan transition-colors">Products</a></li>
+                        <li><a href="#technology"
+                                class="text-gray-400 hover:text-aurora-cyan transition-colors">Technology</a></li>
+                        <li><a href="#gallery"
+                                class="text-gray-400 hover:text-aurora-cyan transition-colors">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-aurora-cyan transition-colors">Custom
+                                Apparel</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-aurora-cyan transition-colors">Promotional
+                                Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-aurora-cyan transition-colors">Fine Art
+                                Prints</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-aurora-cyan transition-colors">Corporate
+                                Branding</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-aurora-cyan transition-colors">Design
+                                Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for exclusive offers and design tips.</p>
+                    <form class="space-y-3">
+                        <input type="email" placeholder="Your email"
+                            class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-aurora-cyan text-sm">
+                        <button
+                            class="w-full gradient-aurora text-white px-4 py-2 rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-aurora-cyan/30 transition-all duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-400 text-sm">
+                    © 2024 AuraPress Co. All rights reserved.
+                </p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-aurora-cyan transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-aurora-cyan transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-aurora-cyan transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 w-14 h-14 gradient-aurora rounded-full flex items-center justify-center text-white shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
