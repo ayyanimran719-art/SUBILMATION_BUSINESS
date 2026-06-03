@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotional Products | AuraPress Co.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Vertical Navigation -->
+    <nav class="vertical-nav">
+        <div class="nav-logo">
+            <a href="index.html">
+                <span class="logo-icon">A</span>
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" title="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="portfolio.html" title="Portfolio"><i class="fas fa-images"></i></a></li>
+            <li><a href="apparel.html" title="Apparel"><i class="fas fa-tshirt"></i></a></li>
+            <li><a href="promotional.html" class="active" title="Promotional"><i class="fas fa-gift"></i></a></li>
+            <li><a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <div class="nav-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <div class="mobile-logo">
+            <a href="index.html">AuraPress</a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="apparel.html">Custom Apparel</a></li>
+            <li><a href="promotional.html" class="active">Promotional Items</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb" data-aos="fade-down">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <a href="portfolio.html">Portfolio</a>
+                    <span>/</span>
+                    <span>Promotional Products</span>
+                </div>
+                <h1 class="page-title" data-aos="fade-up">Promotional Products</h1>
+                <p class="page-description" data-aos="fade-up" data-aos-delay="100">
+                    Custom branded merchandise for effective marketing and brand awareness
+                </p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-bar" data-aos="fade-up">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Products</button>
+                        <button class="filter-btn" data-filter="drinkware">Drinkware</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                        <button class="filter-btn" data-filter="office">Office Items</button>
+                        <button class="filter-btn" data-filter="bags">Bags & Totes</button>
+                    </div>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+
+                    <!-- Drinkware Category -->
+                    <div class="gallery-item" data-category="drinkware" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mug-hot"></i>
+                                <p>Ceramic Coffee Mug</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">11oz Ceramic Mug</h3>
+                            <p class="item-category">Drinkware</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $8.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinkware" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mug-hot"></i>
+                                <p>Large Coffee Mug</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">15oz Ceramic Mug</h3>
+                            <p class="item-category">Drinkware</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $9.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinkware" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-bottle-water"></i>
+                                <p>Water Bottle</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Stainless Steel Bottle</h3>
+                            <p class="item-category">Drinkware</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $16.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinkware" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-wine-glass"></i>
+                                <p>Travel Tumbler</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Insulated Tumbler</h3>
+                            <p class="item-category">Drinkware</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $14.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinkware" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-beer"></i>
+                                <p>Beer Stein</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Beer Stein</h3>
+                            <p class="item-category">Drinkware</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $12.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinkware" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-glass-martini"></i>
+                                <p>Wine Glass</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Wine Glass</h3>
+                            <p class="item-category">Drinkware</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $11.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accessories Category -->
+                    <div class="gallery-item" data-category="accessories" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Phone Case</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Phone Case</h3>
+                            <p class="item-category">Accessories</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $15.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="accessories" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-key"></i>
+                                <p>Keychain</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Metal Keychain</h3>
+                            <p class="item-category">Accessories</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $4.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="accessories" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-hat-cowboy"></i>
+                                <p>Baseball Cap</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Baseball Cap</h3>
+                            <p class="item-category">Accessories</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $18.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="accessories" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user-tie"></i>
+                                <p>Lanyard</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Lanyard</h3>
+                            <p class="item-category">Accessories</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $3.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="accessories" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-magnet"></i>
+                                <p>Fridge Magnet</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Magnet</h3>
+                            <p class="item-category">Accessories</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $2.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="accessories" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-shield-alt"></i>
+                                <p>Badge/Pin</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Badge/Pin</h3>
+                            <p class="item-category">Accessories</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $3.49</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Office Items Category -->
+                    <div class="gallery-item" data-category="office" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mouse"></i>
+                                <p>Mouse Pad</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Mouse Pad</h3>
+                            <p class="item-category">Office Items</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $7.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="office" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-pen"></i>
+                                <p>Pen Set</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Branded Pen Set</h3>
+                            <p class="item-category">Office Items</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $5.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="office" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-book"></i>
+                                <p>Notebook</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Notebook</h3>
+                            <p class="item-category">Office Items</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $9.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="office" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-calendar"></i>
+                                <p>Desk Calendar</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Desk Calendar</h3>
+                            <p class="item-category">Office Items</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $12.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="office" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-clock"></i>
+                                <p>Desk Clock</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Branded Desk Clock</h3>
+                            <p class="item-category">Office Items</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $19.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="office" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-paperclip"></i>
+                                <p>Desk Organizer</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Desk Organizer</h3>
+                            <p class="item-category">Office Items</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $14.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bags & Totes Category -->
+                    <div class="gallery-item" data-category="bags" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-shopping-bag"></i>
+                                <p>Tote Bag</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Tote Bag</h3>
+                            <p class="item-category">Bags & Totes</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $10.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bags" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-backpack"></i>
+                                <p>Backpack</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Backpack</h3>
+                            <p class="item-category">Bags & Totes</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $29.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bags" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-suitcase"></i>
+                                <p>Drawstring Bag</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Drawstring Bag</h3>
+                            <p class="item-category">Bags & Totes</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $8.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bags" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-briefcase"></i>
+                                <p>Messenger Bag</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Messenger Bag</h3>
+                            <p class="item-category">Bags & Totes</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $24.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bags" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-shopping-basket"></i>
+                                <p>Cooler Bag</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Insulated Cooler Bag</h3>
+                            <p class="item-category">Bags & Totes</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $18.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="bags" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-luggage-cart"></i>
+                                <p>Duffel Bag</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Sport Duffel Bag</h3>
+                            <p class="item-category">Bags & Totes</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $32.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Mixed Items -->
+                    <div class="gallery-item" data-category="drinkware" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-cocktail"></i>
+                                <p>Shot Glass</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Shot Glass</h3>
+                            <p class="item-category">Drinkware</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $6.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="accessories" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-umbrella"></i>
+                                <p>Umbrella</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Branded Umbrella</h3>
+                            <p class="item-category">Accessories</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $22.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="office" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-sticky-note"></i>
+                                <p>Sticky Notes</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Sticky Notes</h3>
+                            <p class="item-category">Office Items</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $4.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinkware" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-coffee"></i>
+                                <p>Travel Mug</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Insulated Travel Mug</h3>
+                            <p class="item-category">Drinkware</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $13.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="accessories" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-headphones"></i>
+                                <p>Earbuds Case</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Earbuds Case</h3>
+                            <p class="item-category">Accessories</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $9.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="office" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-id-card"></i>
+                                <p>Badge Holder</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Badge Holder</h3>
+                            <p class="item-category">Office Items</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $5.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more" data-aos="fade-up">
+                    <button class="btn btn-outline">Load More Products</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Banner -->
+        <section class="info-banner">
+            <div class="container">
+                <div class="banner-grid">
+                    <div class="banner-item" data-aos="fade-up">
+                        <i class="fas fa-truck"></i>
+                        <h4>Free Shipping</h4>
+                        <p>On orders over $500</p>
+                    </div>
+                    <div class="banner-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-tags"></i>
+                        <h4>Bulk Pricing</h4>
+                        <p>Better rates for larger orders</p>
+                    </div>
+                    <div class="banner-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-redo"></i>
+                        <h4>Reorder Easy</h4>
+                        <p>Quick reordering system</p>
+                    </div>
+                    <div class="banner-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-headset"></i>
+                        <h4>Expert Support</h4>
+                        <p>Dedicated account managers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-gift"></i>
+                    <p>Product Preview</p>
+                </div>
+            </div>
+            <div class="lightbox-info">
+                <h3 class="lightbox-title">Product Name</h3>
+                <p class="lightbox-category">Category</p>
+                <p class="lightbox-description">
+                    High-quality promotional product with custom sublimation printing.
+                    Perfect for corporate branding and marketing campaigns.
+                </p>
+                <div class="lightbox-price">From $9.99</div>
+                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3 class="footer-logo">AuraPress Co.</h3>
+                    <p class="footer-text">
+                        Professional sublimation printing services with 15+ years of experience.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="apparel.html">Custom Apparel</a></li>
+                        <li><a href="promotional.html">Promotional</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">T-Shirt Printing</a></li>
+                        <li><a href="#">Promotional Items</a></li>
+                        <li><a href="#">Corporate Branding</a></li>
+                        <li><a href="#">Sports Uniforms</a></li>
+                        <li><a href="#">Design Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Print Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> hello@aurapress.co</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 AuraPress Co. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

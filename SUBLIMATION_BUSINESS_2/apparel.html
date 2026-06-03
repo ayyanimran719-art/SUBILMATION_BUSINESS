@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Apparel | AuraPress Co.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Vertical Navigation -->
+    <nav class="vertical-nav">
+        <div class="nav-logo">
+            <a href="index.html">
+                <span class="logo-icon">A</span>
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" title="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="portfolio.html" title="Portfolio"><i class="fas fa-images"></i></a></li>
+            <li><a href="apparel.html" class="active" title="Apparel"><i class="fas fa-tshirt"></i></a></li>
+            <li><a href="promotional.html" title="Promotional"><i class="fas fa-gift"></i></a></li>
+            <li><a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <div class="nav-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <div class="mobile-logo">
+            <a href="index.html">AuraPress</a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="apparel.html" class="active">Custom Apparel</a></li>
+            <li><a href="promotional.html">Promotional Items</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb" data-aos="fade-down">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <a href="portfolio.html">Portfolio</a>
+                    <span>/</span>
+                    <span>Custom Apparel</span>
+                </div>
+                <h1 class="page-title" data-aos="fade-up">Custom Apparel</h1>
+                <p class="page-description" data-aos="fade-up" data-aos-delay="100">
+                    Premium quality custom clothing with vibrant, long-lasting prints
+                </p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-bar" data-aos="fade-up">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Items</button>
+                        <button class="filter-btn" data-filter="tshirts">T-Shirts</button>
+                        <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+                        <button class="filter-btn" data-filter="jerseys">Jerseys</button>
+                        <button class="filter-btn" data-filter="sportswear">Sportswear</button>
+                    </div>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+
+                    <!-- T-Shirts Category -->
+                    <div class="gallery-item" data-category="tshirts" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Custom Print T-Shirt #1</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">All-Over Print Tee</h3>
+                            <p class="item-category">Premium T-Shirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $19.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tshirts" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                                <p>V-Neck Custom Tee</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">V-Neck Performance Tee</h3>
+                            <p class="item-category">Premium T-Shirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $22.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tshirts" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Polo Style Shirt</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Polo Shirt</h3>
+                            <p class="item-category">Premium T-Shirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $29.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tshirts" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Long Sleeve Tee</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Long Sleeve Custom Tee</h3>
+                            <p class="item-category">Premium T-Shirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $24.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tshirts" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Tank Top Design</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Performance Tank Top</h3>
+                            <p class="item-category">Premium T-Shirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $17.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tshirts" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Raglan Baseball Tee</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Raglan Baseball Style</h3>
+                            <p class="item-category">Premium T-Shirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $21.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hoodies Category -->
+                    <div class="gallery-item" data-category="hoodies" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-vest"></i>
+                                <p>Pullover Hoodie</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Pullover Hoodie</h3>
+                            <p class="item-category">Hoodies & Sweatshirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $44.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hoodies" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-vest"></i>
+                                <p>Zip-Up Hoodie</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Full Zip Hoodie</h3>
+                            <p class="item-category">Hoodies & Sweatshirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $49.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hoodies" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-vest"></i>
+                                <p>Crewneck Sweatshirt</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Crewneck Sweatshirt</h3>
+                            <p class="item-category">Hoodies & Sweatshirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $39.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hoodies" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-vest"></i>
+                                <p>Sleeveless Hoodie</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Sleeveless Hoodie</h3>
+                            <p class="item-category">Hoodies & Sweatshirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $34.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hoodies" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-vest"></i>
+                                <p>Tech Fleece Hoodie</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Tech Fleece Hoodie</h3>
+                            <p class="item-category">Hoodies & Sweatshirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $54.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jerseys Category -->
+                    <div class="gallery-item" data-category="jerseys" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-running"></i>
+                                <p>Soccer Jersey</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Soccer Jersey</h3>
+                            <p class="item-category">Sports Jerseys</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $34.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="jerseys" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-running"></i>
+                                <p>Basketball Jersey</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Basketball Team Jersey</h3>
+                            <p class="item-category">Sports Jerseys</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $36.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="jerseys" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-running"></i>
+                                <p>Baseball Jersey</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Baseball Team Jersey</h3>
+                            <p class="item-category">Sports Jerseys</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $32.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="jerseys" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-running"></i>
+                                <p>Football Jersey</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">American Football Jersey</h3>
+                            <p class="item-category">Sports Jerseys</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $42.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="jerseys" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-running"></i>
+                                <p>Cycling Jersey</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Pro Cycling Jersey</h3>
+                            <p class="item-category">Sports Jerseys</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $44.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sportswear Category -->
+                    <div class="gallery-item" data-category="sportswear" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-dumbbell"></i>
+                                <p>Athletic Shorts</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Performance Shorts</h3>
+                            <p class="item-category">Athletic Wear</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $24.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sportswear" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-dumbbell"></i>
+                                <p>Training Pants</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Athletic Track Pants</h3>
+                            <p class="item-category">Athletic Wear</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $34.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sportswear" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-dumbbell"></i>
+                                <p>Compression Shirt</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Compression Base Layer</h3>
+                            <p class="item-category">Athletic Wear</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $29.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sportswear" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-dumbbell"></i>
+                                <p>Running Singlet</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Marathon Running Singlet</h3>
+                            <p class="item-category">Athletic Wear</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $19.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sportswear" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-dumbbell"></i>
+                                <p>Yoga Pants</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Yoga Leggings</h3>
+                            <p class="item-category">Athletic Wear</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $32.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sportswear" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-dumbbell"></i>
+                                <p>Sports Bra</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Performance Sports Bra</h3>
+                            <p class="item-category">Athletic Wear</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $27.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Items -->
+                    <div class="gallery-item" data-category="tshirts" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Pocket Tee</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Pocket T-Shirt</h3>
+                            <p class="item-category">Premium T-Shirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $20.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hoodies" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-vest"></i>
+                                <p>Quarter Zip Pullover</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Quarter Zip Pullover</h3>
+                            <p class="item-category">Hoodies & Sweatshirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $42.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="jerseys" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-running"></i>
+                                <p>Volleyball Jersey</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Volleyball Team Jersey</h3>
+                            <p class="item-category">Sports Jerseys</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $31.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sportswear" data-aos="fade-up">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-dumbbell"></i>
+                                <p>Windbreaker Jacket</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Windbreaker</h3>
+                            <p class="item-category">Athletic Wear</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $54.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tshirts" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Ringer Tee</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Retro Ringer T-Shirt</h3>
+                            <p class="item-category">Premium T-Shirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $23.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hoodies" data-aos="fade-up" data-aos-delay="200">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-vest"></i>
+                                <p>Bomber Jacket</p>
+                            </div>
+                            <div class="item-overlay">
+                                <button class="quick-view" onclick="openLightbox(this)">
+                                    <i class="fas fa-eye"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Custom Bomber Jacket</h3>
+                            <p class="item-category">Hoodies & Sweatshirts</p>
+                            <div class="item-meta">
+                                <span class="item-price">From $64.99</span>
+                                <a href="contact.html" class="item-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more" data-aos="fade-up">
+                    <button class="btn btn-outline">Load More Items</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Banner -->
+        <section class="info-banner">
+            <div class="container">
+                <div class="banner-grid">
+                    <div class="banner-item" data-aos="fade-up">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h4>Fast Production</h4>
+                        <p>5-7 business days standard</p>
+                    </div>
+                    <div class="banner-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-palette"></i>
+                        <h4>Custom Designs</h4>
+                        <p>Free design assistance</p>
+                    </div>
+                    <div class="banner-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Quality Guarantee</h4>
+                        <p>100% satisfaction promise</p>
+                    </div>
+                    <div class="banner-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-users"></i>
+                        <h4>Bulk Discounts</h4>
+                        <p>Save more on large orders</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-tshirt"></i>
+                    <p>Product Preview</p>
+                </div>
+            </div>
+            <div class="lightbox-info">
+                <h3 class="lightbox-title">Product Name</h3>
+                <p class="lightbox-category">Category</p>
+                <p class="lightbox-description">
+                    Premium quality custom apparel with vibrant sublimation printing.
+                    Fully customizable with your designs, logos, and text.
+                </p>
+                <div class="lightbox-price">From $19.99</div>
+                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3 class="footer-logo">AuraPress Co.</h3>
+                    <p class="footer-text">
+                        Professional sublimation printing services with 15+ years of experience.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="apparel.html">Custom Apparel</a></li>
+                        <li><a href="promotional.html">Promotional</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">T-Shirt Printing</a></li>
+                        <li><a href="#">Promotional Items</a></li>
+                        <li><a href="#">Corporate Branding</a></li>
+                        <li><a href="#">Sports Uniforms</a></li>
+                        <li><a href="#">Design Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Print Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> hello@aurapress.co</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 AuraPress Co. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
